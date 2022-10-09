@@ -11,6 +11,7 @@ import { withI18nSuspense } from '@/react-tools/withI18nSuspense';
 
 import { wizardModule } from './wizard';
 import { teamsModule } from './teams';
+import { portainerCCModule } from './portainercc';
 import { updateSchedulesModule } from './update-schedules';
 
 export const viewsModule = angular
@@ -18,6 +19,7 @@ export const viewsModule = angular
     wizardModule,
     teamsModule,
     updateSchedulesModule,
+    portainerCCModule,
   ])
   .component(
     'homeView',
