@@ -418,6 +418,27 @@ angular
         },
       };
 
+      //portainerCC
+      var keymanagement = {
+        name: 'portainer.keymanagement',
+        url: '/keys?type',
+        views: {
+          'content@': {
+            component: 'keymanagement',
+          },
+        },
+      };
+
+      var raList = {
+        name: 'portainer.ra.list',
+        url: '/ralist',
+        views: {
+          'content@': {
+            component: 'raList',
+          },
+        },
+      };
+
       $stateRegistryProvider.register(root);
       $stateRegistryProvider.register(endpointRoot);
       $stateRegistryProvider.register(portainer);
@@ -449,6 +470,10 @@ angular
       $stateRegistryProvider.register(tags);
       $stateRegistryProvider.register(users);
       $stateRegistryProvider.register(user);
+
+      //portainerCC
+      $stateRegistryProvider.register(keymanagement);
+      $stateRegistryProvider.register(raList);
     },
   ]);
 
